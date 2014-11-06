@@ -33,5 +33,9 @@
   (it "displays the board"
     (def board {0 "X" 2 "O" 4 "X" 8 "O"})
      (should= "X| |O\n-----\n |X| \n-----\n | |O\n"
-              (with-out-str (display-board board))))
+              (with-out-str (display-board board)))))
+
+(describe "display-player-turn"
+  (it "notifies player turn"
+      (should= "X's turn:\n" (with-out-str (display-player-turn "X"))))
 )

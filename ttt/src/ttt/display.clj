@@ -16,3 +16,6 @@
 
 (defn display-board [board]
   (println (render-board board)))
+
+(defn display-player-turn [player-symbol]
+  (println (str player-symbol "'s turn:")))
